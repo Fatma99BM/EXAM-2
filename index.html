@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="imges/logo.png">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <!-- <div id="loadingScreen">
+        <span class="loader"></span>
+    </div> -->
+
+    <!--     Navbar Section     -->
+    <div id="navSide" class=" min-vh-100 position-fixed d-flex top-0">
+        <div id="tableNavbar" class="nav-tab  d-flex flex-column justify-content-between min-vh-100 p-4  d-none" >
+            <div class="links-nav">
+                <ul class="list-unstyled overflow-hidden">
+                    <li id="searchLink" class="link py-2">Search</li>
+                    <li id="categoriesLink" class="link py-2">Categories</li>
+                    <li id="areaLink" class="link py-2">Area</li>
+                    <li id="ingredientsLink" class="link py-2">Ingredients</li>
+                    <li id="contactLink" class="link py-2">Contact Us</li>
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <div class="icons-footer">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="rights-footer">
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="header-navbar d-flex justify-content-between flex-column py-4">
+            <img src="imges/depositphotos_417787354-stock-illustration-yummy-smile-vector-cartoon-line.jpg" alt="logo photo">
+            <i id="navBtn" class="fa-solid open-close-icon fa-2x fa-align-justify"></i>
+            <i id="closeBtn" class="fa-solid open-close-icon fa-2x fa-x  d-none"></i>
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+
+<!--     serch page      -->
+
+    <div class="container w-75">
+        <div id="searchBox" class="row py-4 d-none">
+            <div class="col-md-6">
+                <input id="searchMealInput" type="text" placeholder="Search By Name" class="form-control bg-transparent text-white">
+            </div>
+            <div class="col-md-6">
+                <input id="search1chInput" type="text" placeholder="Search By First Letter" class="form-control bg-transparent text-white" maxlength="1">
+            </div>
+        </div>
+    </div>
+
+    <!--     contact page      -->
+
+    <div id="contactUs" class="min-vh-100 d-none">
+        <div class="container">
+            <div class="row py-5 g-4 ">
+                <div class="contact min-vh-100 d-flex justify-content-center align-items-center">
+                    <div class="container w-75 text-center">
+                        <div class="row g-4 d-flex justify-content-center">
+                            <div class="col-md-6">
+                                <input class="form-control" type="text" placeholder="Enter Your Name" id="nameInput">
+                                <div id="nameAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                    Special characters and numbers not allowed
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-control" type="email" placeholder="Enter Your Email" id="emailInput">
+                                <div id="emailAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                    Email not valid *exemple@yyy.zzz
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-control" type="number" placeholder="Enter Your Phone" id="phoneInput">
+                                <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                    Enter valid Phone Number
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-control" type="number" placeholder="Enter Your Age" id="ageInput">
+                                <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                    Enter valid age
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-control" type="password" placeholder="Enter Your Password" id="passwordInput">
+                                <div id="passwordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                    Enter valid password *Minimum eight characters, at least one letter and one number:*
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-control" type="password" placeholder="Repassword" id="repasswordInput">
+                                <div id="repasswordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                    Enter valid repassword
+                                </div>
+                            </div>
+                            <button id="contactBtn" class="btn btn-outline-danger px-2 mt-3 disabled">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--     home page      -->
+    <div id="myContainer" class="min-vh-100 position-relative">
+        <div class="container">
+            <div id="dataOfRow" class="row py-5 g-4 ">
+                
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
